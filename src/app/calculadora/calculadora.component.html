@@ -1,0 +1,5 @@
+<h2>Calculadora</h2>
+    <p><input type="number" [(ngModel)]="numero1"></p>
+    <p><input type="number" [(ngModel)]="numero2"></p>
+    <p><button (click)="sumar()">+</button>&nbsp;<button (click)="restar()">-</button>&nbsp;<button (click)="multiplicar()">x</button>&nbsp;<button (click)="dividir()">/</button></p>
+    <p>Resultado: {{ resultado }}</p>

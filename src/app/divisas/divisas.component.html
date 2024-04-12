@@ -1,0 +1,16 @@
+<h2>Calculadora de divisas</h2>
+<p><input type="number" [(ngModel)]="cantidad"></p>
+<p><label>De:</label>
+  <select [(ngModel)]="monedaO">
+    <option value="Euros">Euros</option>
+    <option value="Dólares">Dólares</option>
+    <option value="Libras">Libras</option>
+  </select></p>
+  <p><label>A:</label>
+  <select [(ngModel)]="monedaD">
+    <option value="Euros">Euros</option>
+    <option value="Dólares">Dólares</option>
+    <option value="Libras">Libras</option>
+  </select></p>
+  <p><button (click)="convertir()">Convertir</button></p>
+  <p>Resultado: {{ resultado }}</p>
